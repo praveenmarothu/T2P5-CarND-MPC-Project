@@ -10,17 +10,17 @@ Self-Driving Car Engineer Nanodegree Program
 ---
 The state is defined by below 6 variables
 
-**x** -  x coordinate of the vehicle position
-**y** -  y coordinate of the vehicle  position
-**psi** - orientation angle of the vehicle
-**v** - velocity of the vehicle
-**cte** - cross track error
-**epsi** - psi error
+* **x** -  x coordinate of the vehicle position
+* **y** -  y coordinate of the vehicle  position
+* **psi** - orientation angle of the vehicle
+* **v** - velocity of the vehicle
+* **cte** - cross track error
+* **epsi** - psi error
 
 The outputs of the Acutator are 
 
-**δ (delta)** - steering angle
-**a** - acceleration (including throttle and break)
+* **δ (delta)** - steering angle
+* **a** - acceleration (including throttle and break)
 
 The state of the current timestamp is calculated using the below equations
 
