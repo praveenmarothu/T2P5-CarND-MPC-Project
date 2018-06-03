@@ -32,8 +32,8 @@ The state of the current timestamp is calculated using the below equations
 ###Timestep Length and Elapsed Duration (N & dt)
 ---
 
-N = 10
-dt = 0.1
+* N = 10
+* dt = 0.1
 
 Here we are looking to find an optimum value for the prediction horizon. This is duration over which the future predictions will be made. 
 The prediction horizon is a product of *N* & *dt* where **N** is the number of timesteps in the horizon and **dt** is how much time elapses between actuations. The value of N has an the performance of the controller with respect to both the speed and the prediction accuracy. We do not want to consider too less a value to not get good results and also not too many as the scene would have changed considerabily with a big look ahead and its values not making any sense with the current scene.
