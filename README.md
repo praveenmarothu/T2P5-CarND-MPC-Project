@@ -3,7 +3,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
-##Implementation
+## Implementation
 
 
 #### The Model
@@ -29,7 +29,7 @@ The state of the current timestamp is calculated using the below equations
 **dt** is the timestep between predictions 
 **Lf** is the distance between the front wheel and the center of gravity of the vehicle, which determines its turning radius.
 
-###Timestep Length and Elapsed Duration (N & dt)
+### Timestep Length and Elapsed Duration (N & dt)
 ---
 
 * N = 10
@@ -40,7 +40,7 @@ The prediction horizon is a product of *N* & *dt* where **N** is the number of t
 
 I started testing with  N = 20 and dt = 0.01 and the vehicle just started and went off the track erratically. After a series of changes to the values I ended up with N=10 and dt=0.1 and with these values the car drove smoothly through the track.
 
-###Polynomial Fitting and MPC Preprocessing
+### Polynomial Fitting and MPC Preprocessing
 ---
 
 The waypoints are given in global coordinate and I first converted to the vehicle coordinates using the below code
@@ -62,7 +62,7 @@ After the conversion, the waypoints are given to the polyfit() function to get a
 
  auto coeffs = polyfit(ptsx_car, ptsy_car, 3); // 3rd order polynomial for the waypoints
 ```
-###Model Predictive Control with Latency
+### Model Predictive Control with Latency
 ---
 
 In a reala real world scenerio , an actuation command will not execute instantly but with a delay as the command flows through the system. we can consider and approximate delay of 100 milliseconds.
